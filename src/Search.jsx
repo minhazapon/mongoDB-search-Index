@@ -10,6 +10,8 @@ const Search = () => {
     const [currentPage, setCurrentPage] = useState(1) 
     const [postPerPage, setPerPage] = useState(3)
 
+    // const [ProductsSearch, setProductsSearch] = useState('')
+   
 
     useEffect( () =>{
 
@@ -25,6 +27,19 @@ const Search = () => {
     const currentPost = search.slice( fastIndex, lastIndex )
 
 
+    // const handleSearch = e =>{
+       
+    //     e.preventDefault();
+
+    //     const searchProducts = e.target.search.value 
+    //     // console.log(searchProducts)
+    //     setProductsSearch(searchProducts)
+
+
+
+    // }
+
+
 
 
     return (
@@ -33,15 +48,16 @@ const Search = () => {
             <div>
 
             
-             <div className=" flex justify-center">
+             {/* <div className=" flex justify-center">
                 <div>
-                <input
-                type="text"
-                placeholder="Type here"
-                className="input input-bordered input-info w-full max-w-xs" />
+                 <form onSubmit={handleSearch} className=" flex items-center gap-2">
+                 <input type="text" placeholder="Type here" name="search" className="input input-bordered input-info w-full max-w-xs" />
+                 <input className=" btn " type="submit" value="Search" />
+                 </form>   
+                
                 </div>
              </div>
- 
+  */}
 
             {/* --------------------------------------------------- */}
 
